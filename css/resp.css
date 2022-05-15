@@ -1,0 +1,155 @@
+@media screen and (max-width: 800px) {
+  .paddingLR {
+    padding: 0 60px;
+  }
+  header .header nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow-y: scroll;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  header .header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 100px 80px 0;
+  }
+  header .header nav ul li {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  header .header nav ul li a {
+    font-size: 2.5rem;
+  }
+  header .header nav.active {
+    left: 0;
+  }
+  header .header .humber {
+    display: block;
+  }
+  header .header .humber.active .humber__bar:nth-of-type(1) {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(38deg);
+            transform: rotate(38deg);
+  }
+  header .header .humber.active .humber__bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .header .humber.active .humber__bar:nth-of-type(3) {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transform: rotate(-38deg);
+            transform: rotate(-38deg);
+  }
+  .home .box h1 {
+    font-size: 6rem;
+  }
+  .home .box p {
+    font-size: 1.8rem;
+  }
+  .section .section__subTitle {
+    font-size: 1.7rem;
+  }
+  .section.section--black {
+    padding: 100px 60px;
+  }
+  .about .about__content {
+    display: block;
+  }
+  .about .about__content .left {
+    width: 60%;
+    margin: 0 auto 30px;
+  }
+  .about .about__content .right {
+    width: 100%;
+  }
+  .service ul {
+    padding: 0;
+  }
+  .service ul li {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .service ul li .img-wrapper {
+    width: 75%;
+    margin: 0 auto 20px;
+  }
+  .service ul li .service-content {
+    width: 100%;
+  }
+  .service ul li .service-content .text br {
+    display: none;
+  }
+  .skill .skill__content {
+    display: block;
+  }
+  .skill .skill__content .left {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  .skill .skill__content .right {
+    width: 100%;
+  }
+  .work .work__content .works-pic li {
+    width: calc(50% - 50px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .paddingLR {
+    padding: 0 35px;
+  }
+  .section .section__subTitle {
+    font-size: 1.7rem;
+  }
+  .section.section--black {
+    padding: 100px 35px;
+  }
+  .home .box h1 {
+    font-size: 6rem;
+  }
+  .home .box h1 br {
+    display: block;
+  }
+  .home .box p {
+    font-size: 1.8rem;
+  }
+  .home .box p br {
+    display: block;
+  }
+  .service ul li .service-content .text {
+    padding: 10px;
+    font-size: 2.0rem;
+  }
+  .service ul li .service-content .text br {
+    display: none;
+  }
+  .service ul li .service-content p {
+    padding: 0 10px;
+    font-size: 1.4rem;
+  }
+  .work .work__content .works-pic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .work__content .works-pic li {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=resp.css.map */
